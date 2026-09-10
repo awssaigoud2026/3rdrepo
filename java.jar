@@ -1,0 +1,35 @@
+// 1. Variables
+let name = "Alice";       // changeable
+const age = 25;           // constant
+
+// 2. Functions
+function greet(user) {
+  return `Hello, ${user}!`;
+}
+
+// 3. Conditionals
+if (age >= 18) console.log(greet(name));
+
+// 4. Loops
+for (let i = 1; i <= 3; i++) console.log(i);
+
+// 5. Arrays & Objects
+let colors = ["red", "green", "blue"];
+let person = { name: "Bob", age: 30 };
+
+// 6. Accessing data
+console.log(colors[0], person.name);
+
+// 7. Arrow functions
+let square = n => n * n;
+console.log(square(4));
+
+// 8. Events (browser)
+document.body.onclick = () => alert("Clicked!");
+
+// 9. JSON
+let json = JSON.stringify(person);
+console.log(JSON.parse(json));
+
+// 10. Async (Promise)
+fetch("https://api.github.com").then(r => r.json()).then(data => console.log(data));
